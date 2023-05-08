@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*- 
+
 import numpy as np
 import re
 import os
@@ -170,7 +173,15 @@ if __name__ == "__main__":
     # sav_1 = "/home/lewis/catkin_ws2/src/contour-context/sample_data/ts-sens_pose-kitti00.txt"
     # sav_2 = "/home/lewis/catkin_ws2/src/contour-context/sample_data/ts-lidar_bins-kitti00.txt"
 
-    ksq = "08"
+
+    # KIITI08 for test
+    dir_lid_bin = "/media/lemon/database/odometry_velodyne/velodyne/sequences/08/velodyne"
+    fp_pose = "/media/lemon/database/odometry_velodyne/poses/08.txt"
+    fp_times = "/media/lemon/database/odometry_velodyne/velodyne/sequences/08/times.txt"
+    fp_calib = "/media/lemon/database/odometry_velodyne/velodyne/sequences/08/calib.txt"
+    sav_1 = "/home/lemon/contour_context/src/contour-context/sample_data/ts-sens_pose-kitti08.txt"
+    sav_2 = "/home/lemon/contour_context/src/contour-context/sample_data/ts-lidar_bins-kitti08.txt"
+
     # KITTI08
     # dir_lid_bin = "/media/lewis/S7/Datasets/kitti/odometry/dataset/sequences/%s/velodyne" % ksq
     # # dir_lid_bin = "/home/lewis/Downloads/datasets/sequences/velodyne"
@@ -182,12 +193,12 @@ if __name__ == "__main__":
     # sav_2 = "/home/lewis/catkin_ws2/src/contour-context/sample_data/ts-lidar_bins-kitti%s.txt" % ksq
 
     # Onboard ssd:
-    dir_lid_bin = "/media/lewis/DC36269C362677A2/d/cont2_dataset/%s/velodyne" % ksq
-    fp_pose = "/media/lewis/DC36269C362677A2/d/cont2_dataset/%s/poses.txt" % ksq
-    fp_times = "/media/lewis/DC36269C362677A2/d/cont2_dataset/%s/times.txt" % ksq
-    fp_calib = "/media/lewis/DC36269C362677A2/d/cont2_dataset/%s/calib.txt" % ksq
-    sav_1 = "/home/lewis/catkin_ws2/src/contour-context/sample_data/ts-sens_pose-kitti%s.txt" % ksq
-    sav_2 = "/home/lewis/catkin_ws2/src/contour-context/sample_data/ts-lidar_bins-kitti%s.txt" % ksq
+    # dir_lid_bin = "/media/lewis/DC36269C362677A2/d/cont2_dataset/%s/velodyne" % ksq
+    # fp_pose = "/media/lewis/DC36269C362677A2/d/cont2_dataset/%s/poses.txt" % ksq
+    # fp_times = "/media/lewis/DC36269C362677A2/d/cont2_dataset/%s/times.txt" % ksq
+    # fp_calib = "/media/lewis/DC36269C362677A2/d/cont2_dataset/%s/calib.txt" % ksq
+    # sav_1 = "/home/lewis/catkin_ws2/src/contour-context/sample_data/ts-sens_pose-kitti%s.txt" % ksq
+    # sav_2 = "/home/lewis/catkin_ws2/src/contour-context/sample_data/ts-lidar_bins-kitti%s.txt" % ksq
 
     # # mulran as KITTI: KAIST01
     # dir_lid_bin = "/media/lewis/S7/Datasets/mulran_as_kitti/sequences/51/velodyne"
@@ -196,6 +207,8 @@ if __name__ == "__main__":
     # fp_calib = "/media/lewis/S7/Datasets/mulran_as_kitti/sequences/51/calib.txt"
     # sav_1 = "/home/lewis/catkin_ws2/src/contour-context/sample_data/ts-sens_pose-kitti51.txt"
     # sav_2 = "/home/lewis/catkin_ws2/src/contour-context/sample_data/ts-lidar_bins-kitti51.txt"
+
+    # # mulran KAIST01 test
 
     # # mulran as KITTI: RS02
     # dir_lid_bin = "/media/lewis/S7/Datasets/mulran_as_kitti/sequences/62/velodyne"

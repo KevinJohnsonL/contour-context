@@ -266,7 +266,8 @@ int main(int argc, char **argv) {
 
   // Check thres path
 //  std::string cand_score_config = PROJ_DIR + "/config/score_thres_kitti_bag_play.cfg";
-  std::string cand_score_config = "/home/lewis/catkin_ws2/src/contour-context/config/batch_bin_test_config.yaml";
+  // std::string cand_score_config = "/home/lewis/catkin_ws2/src/contour-context/config/batch_bin_test_config.yaml";
+  std::string cand_score_config = "/home/lemon/contour_context/src/contour-context/config/batch_bin_test_config.yaml";
 
   // Main process:
   BatchBinSpinner o(nh);

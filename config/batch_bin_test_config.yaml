@@ -45,9 +45,14 @@ ContourManagerConfig:
 
 #####################################################
 # Data path info file and visualization similarity thres
-fpath_sens_gt_pose: "/home/lewis/catkin_ws2/src/contour-context/sample_data/ts-sens_pose-kitti08.txt"
-fpath_lidar_bins: "/home/lewis/catkin_ws2/src/contour-context/sample_data/ts-lidar_bins-kitti08.txt"
-fpath_outcome_sav: "/home/lewis/catkin_ws2/src/contour-context/results/outcome_txt/outcome-kitti08.txt"
+
+fpath_sens_gt_pose: "/home/lemon/contour_context/src/contour-context/sample_data/ts-sens_pose-kitti08.txt"
+fpath_lidar_bins: "/home/lemon/contour_context/src/contour-context/sample_data/ts-lidar_bins-kitti08.txt"
+fpath_outcome_sav: "/home/lemon/contour_context/src/contour-context/outcome_txt/outcome-kitti08.txt"
+
+# fpath_sens_gt_pose: "/home/lewis/catkin_ws2/src/contour-context/sample_data/ts-sens_pose-kitti08.txt"
+# fpath_lidar_bins: "/home/lewis/catkin_ws2/src/contour-context/sample_data/ts-lidar_bins-kitti08.txt"
+# fpath_outcome_sav: "/home/lewis/catkin_ws2/src/contour-context/results/outcome_txt/outcome-kitti08.txt"
 
 #fpath_sens_gt_pose: "/home/lewis/catkin_ws2/src/contour-context/sample_data/ts-sens_pose-kitti62.txt"
 #fpath_lidar_bins: "/home/lewis/catkin_ws2/src/contour-context/sample_data/ts-lidar_bins-kitti62.txt"

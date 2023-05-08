@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*- 
+
 import numpy as np
 import os
 import sys
@@ -87,6 +90,9 @@ def get_points_ours2(fp_gt_sens_poses, fp_outcome):
             if j < i - 150:
                 gt_positive[i] = 1
                 break
+    
+    # print positive
+    print(" gt positive count: ",np.count_nonzero(gt_positive))
 
     with open(fp_outcome, "r") as f1:
         lines = f1.readlines()
@@ -208,6 +214,6 @@ def main(fp_gt_sens_poses, fp_outcome):
 
 
 if __name__ == "__main__":
-    file_gt_sens_poses = "../sample_data/ts-sens_pose-kitti08.txt"
-    file_outcome = "../results/outcome_txt/outcome-kitti08.txt"
+    file_gt_sens_poses = "/home/lemon/contour_context/src/contour-context/sample_data/ts-sens_pose-kitti08.txt"
+    file_outcome = "/home/lemon/contour_context/src/contour-context/outcome_txt/outcome-kitti08.txt"
     main(file_gt_sens_poses, file_outcome)
